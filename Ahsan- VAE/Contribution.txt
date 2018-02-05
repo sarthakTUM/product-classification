@@ -1,0 +1,9 @@
+While the scope of our project did not involve working with VAE, since we had manpower left I choose to work on VAE to find a latent representation of the Product Images dataset on which we can cluster. I started with the source code provided in the following GitHub repository. 
+
+  
+
+https://github.com/fducau/AAE_pytorch 
+
+  
+
+I've included this source code in the submitted files. It was a VAE made for greyscale MINST dataset of 28 x 28. My first steps were to train the model on the MINST dataset and get it working. Then I made a subset of our data and transformed it to 28*28 and greyscale. However, the reconstructions were not good enough even with different hyper parameters. I then proceeded to change Source Code to incorporate coloured images and larger image sizes. Though, even this didn't provide good reconstructions still the reconstructions were capturing the shapes of objects successfully. Later I changed the encoder layers from fully connected to convolutional and decoder layers to deconvolutional. This improved the reconstruction very slightly however I was still not successful in making any significant improvements. My last attempt to enhance the performance was by changing the size of latent space from 2 to a 2d matrix of 16*16. This produced better reconstructions with a little blur however, at this point the model was not a VAE any more but a regular Auto Encoder with convolutional layers. But since Sarthak was already working on a convolutional autoencoder we decided to go with his Model for our task of making visually similar looking product recommender. 
