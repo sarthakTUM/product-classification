@@ -8,3 +8,5 @@ sarthakdev - Convolutional Autoencoder
 ahsanalilodhi - Variational Autoencoder
 
 ibrardev - ResNet
+
+mubashirhanif - Inception
