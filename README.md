@@ -3,4 +3,4 @@ We try to classify products based on their categories on Amazon in Electronics s
 
 checkout these branches for various models:
 
-sarthakdev - Autoencoder
+sarthakdev - Convolutional Autoencoder
