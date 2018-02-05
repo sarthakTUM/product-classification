@@ -39,8 +39,8 @@ def main():
     # Choose autoencoder model
     #model_name = "simpleAE"
     model_name = "convAE"
-    process_and_save_images = False  # image preproc: resize images and save?
-    train_autoencoder = True  # train from scratch?
+    process_and_save_images = True  # image preproc: resize images and save?
+    train_autoencoder = False  # train from scratch?
 
     # ========================================
     # Automated pre-processing
@@ -88,8 +88,8 @@ def main():
     answer_dir = os.path.join(project_root, 'output')
 
     # In database folder
-    #db_dir = os.path.join(project_root, 'db2')
-    db_dir = "/media/sarthak/HDD/TUM/courses/sem_3/DLCV/project/artificio/db2"
+    db_dir = os.path.join(project_root, 'db2')
+    
     img_train_raw_dir = os.path.join(db_dir)
     img_inventory_raw_dir = os.path.join(db_dir)
     img_train_dir = os.path.join(db_dir, 'processed_train')
