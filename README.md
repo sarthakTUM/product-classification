@@ -6,3 +6,5 @@ checkout these branches for various models:
 sarthakdev - Convolutional Autoencoder
 
 ahsanalilodhi - Variational Autoencoder
+
+ibrardev - ResNet
